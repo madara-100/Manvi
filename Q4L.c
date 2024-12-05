@@ -8,8 +8,6 @@ typedef struct Node {
     struct Node* right;
 } Node;
 
-
-
 // Function to insert a node into the BST
 Node* insert(Node* root, int data) {
     if (root == NULL) {
@@ -139,15 +137,15 @@ int main() {
                     printf("Smallest node in BST: %d\n", root->data);                
                     break;
             case 5:
+                   int count;
                    if (root == NULL){ 
-                    return 0;
+                        count =0;
                     }
-                   int count = 0;
                    if (root->left != NULL){ 
-                    count++;
+                        count++;
                     }
                    if (root->right != NULL) {
-                    count++;
+                        count++;
                    }
                    printf("Total children of root node: %d\n", count);                
                    break;
